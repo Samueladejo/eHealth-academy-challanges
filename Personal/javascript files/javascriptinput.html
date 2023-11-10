@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript events</title>
+</head>
+<body>
+    <h1>Javascripts Events</h1>
+    <h4>Add numbers</h4>
+    <p>
+        <input id="num-one"> + <input id="num-two">
+    </p>
+    <p id="add-sum"></p>
+
+    <script>
+        var numOne = document.getElementById("num-one");
+        var numTwo = document.getElementById("num-two");
+        var addSum = document.getElementById("add-sum")
+
+    numOne.addEventListener("input", add);
+    numTwo.addEventListener("input", add);
+    function add(){
+        var one = parseFloat(numOne.value) || 0;
+        var two = parseFloat(numTwo.value) || 0;
+        var sum = one+two
+        addSum.innerHTML = "your sum is:" + sum;
+    }
+       
+    </script>
+</body>
+</html>
+

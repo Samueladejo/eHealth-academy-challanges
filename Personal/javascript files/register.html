@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register click</title>
+</head>
+<body onload="registerClick">
+    <form>
+        <input type="text" id="txtname"><br>
+        <input type="button" value="register" onclick="registerClick"> <br>
+        <div align="center" id="msg"></div>
+    </form>
+    <script>
+        function registerClick (){
+            var name = document.getElementById("txtname").value;
+           var msg = document.write("hello" +name);
+}
+    </script>
+</body>
+</html>

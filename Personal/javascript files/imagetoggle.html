@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image toggle</title>
+    <style>
+        img{
+            width:200px
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Java script events tutorial</h1>
+    <h3>Pictures</h3>
+    <ul>
+        <li><a  data-img="cat1" id="cat1" href="#"> Cat1</a></li>
+        <li>    <a  data-img="cat2" id="cat2" href="#">Cat2</a></li>
+        <a  data-img="animal1" id="animal1" href="#">Animal</a>
+    </ul>
+
+    
+<br>
+    <img src="/images/Cat1.jpg" id="cat1pic" class="hide">
+    <img src="/images/cat2.jpg" id="cat2pic" class="hide">
+    <img src="/images/animal1.jpg" id="animalpic" class="hide">
+    
+    <script>
+        var cat1 = document.getElementById("cat1");
+        var cat2 = document.getElementById("cat2");
+        var animal =  document.getElementById("animal1");
+        var pic = document.getElementById("cat1pic")
+
+
+    cat1.addEventListener("click");
+    //cat2.addEventListener("click", piclink);
+    //animal1.addEventListener("click", piclink);
+        function piclink(){
+            var picId = this.attributes["data-img"].value;
+            var pic = getElementById(picId);
+            if (cat1pic.className === "hide"){
+                pic.className = "";
+            } else {
+                pic.className = "hide";
+            }
+        }
+
+    </script>
+</body>
+</html>
