@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <link rel="stylesheet" href="/100daysofcoding/register.css">
+</head>
+<body>
+    <section>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form>  
+        <label for="">Enter Your First Name:</label> <br>
+        <input type="text" name="" id="Fname"> <br>
+       <label for=""> Enter Your Last Name:</label> <br>
+        <input type="text" name="" id="Lname"><br>
+        <label for="">Enter Your Email:</label> <br>
+        <input type="email" name="" id="Mail"> <br>
+        <label for="">Create a New Password:</label> <br>
+        <input type="password" name="" id="Pword"><br>
+        <hr>
+        <fieldset>
+            <legend>Account  type (Required)</legend> <br>
+        <input type="radio" checked> Personal <br>
+        <input type="radio"> Busines  <br>
+        </fieldset>
+        <hr>
+        Upload a profile picture: <br>
+        <input type="file" id="file"> <br>
+        Input your age (years): <br>
+        <input type="number" id="age"> <br>
+        How did you hear about us? <br>
+        <select name="(Select one)" id="Select">
+            <option value="">Whatsapp</option>
+            <option value="">Facebook</option>
+            <option value="">Words of mouth</option>
+            <option value="">Internet search</option>
+        </select> <br>
+        Provide a bio: <br>
+        <textarea name="bio" id="textarea" cols="30" rows="10" placeholder="I love coding......."></textarea>
+        <br>
+        <input type="checkbox" name="" id="checkbox"> I accept the <a href="">terms and conditions
+        </a>  <br>  
+        <input type="button" value="Submit" id="submitbtn">
+    </form>
+</section>
+</body>
+</html>

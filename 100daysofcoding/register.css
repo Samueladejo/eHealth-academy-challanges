@@ -1,0 +1,28 @@
+body{
+    background-color: #1b1b32;
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+
+}
+section{
+    text-align: center;
+    width: 500px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+form{
+text-align: center;
+margin: 10px;
+
+
+}
+#Fname, #Lname, #Mail, #Pword{
+background-color: rgb(5, 4, 51);
+border: none;
+width:200px;
+height: 25px;
+
+}

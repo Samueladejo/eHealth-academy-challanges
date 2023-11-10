@@ -5,9 +5,10 @@
     <meta attribute="value">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dayone</title>
+     <link rel="stylesheet" href="/100daysofcoding/cat.css">
 </head>
 <body>
-    <h1>Cat Photo App</h1><br>
+    <h1 id="heading">Cat Photo App</h1><br>
     <h2>Cat Photos</h2>
     <p> See more <a href=""> Cat photos</a> in our gallery</p>
     <figure>
@@ -54,6 +55,11 @@
         <input type="button" value="submit">
     </form>
     <p>No Copyright - samuel oche (2023)</p>
-
+<script>
+    var headingEl = document.getElementById("heading");
+    document.body.style="background-color:white";
+    headingEl.innerHTML="Beautiful Cat Photo App";
+    
+</script>
 </body>
 </html>
