@@ -51,15 +51,21 @@
         </tr>
         </tbody>
     </table>
+    <p id="text"> </p>
     
         <script>
         var avatarEls = document.getElementsByTagName("img");
-        var txt=document.getElementById("#avatar-3")
          console.log(avatarEls);
         for (var i=0; i<avatarEls.length; i++){
         var newHeight=300;
         avatarEls[i].style.height = newHeight + 'px';
-        }
+        //avatarEls[i].title = avatarEls[i].alt;
+        avatarEls[i].addEventListener('mouseover', function(event) {
+                // Display the alt text when the mouse is over the image
+                alert(event.target.alt);
+            });
+
+         } 
         </script>
     </body>
 </html>
